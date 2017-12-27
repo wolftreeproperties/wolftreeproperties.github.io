@@ -1,0 +1,32 @@
+.home-page {
+	position: absolute;
+    top: 0;
+    min-height: 100%;
+    padding: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home-alt.jpg);
+    background-size: cover;
+
+    h1 {
+    	text-transform: uppercase;
+    	text-align: center;
+        padding: 32px 45px 40px 45px;
+        border: 8px solid;
+    }
+}
+
+.box-line-1 {
+    font-family: GothamHTF-Black;
+    font-size: 3.1rem;
+    letter-spacing: 4px;
+}
+
+.box-line-2 {
+    font-size: 2.5rem;
+    letter-spacing: 5.75px;
+    padding-left: 4px;
+}
