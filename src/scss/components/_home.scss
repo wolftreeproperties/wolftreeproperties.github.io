@@ -1,14 +1,10 @@
 .home-page {
-	position: absolute;
-    top: 0;
-    min-height: 100%;
-    padding: 0;
-    z-index: -1;
+    @extend %page;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home-alt.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/home.jpg);
     background-size: cover;
 
     h1 {
@@ -26,6 +22,7 @@
 }
 
 .box-line-2 {
+    font-family: GothamHTF-Medium;
     font-size: 2.5rem;
     letter-spacing: 5.75px;
     padding-left: 4px;
