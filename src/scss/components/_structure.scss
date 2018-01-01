@@ -16,7 +16,7 @@
     top: 0;
     min-height: 100%;
     min-width: 100%;
-    transition: opacity 0.25s ease;
+    transition: opacity $transition-duration $transition-timing-function;
 }
 
 .page-inactive {
@@ -27,4 +27,11 @@
 .page-active {
 	opacity: 1;
 	z-index: 0;
+}
+
+%logo {
+	text-transform: uppercase;
+	color: $body-color;
+	text-align: center;
+	border-style: solid;
 }

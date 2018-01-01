@@ -1,4 +1,29 @@
 .investments-page {
 	@extend %page;
-	z-index: -1;
 }
+
+%investments-row {
+	margin: 0;
+
+	& > .col-12 {
+		padding: 0;
+	}
+}
+
+.investments-banner-image {
+	@extend %investments-row;
+
+	& > .col-12 {
+		min-height: 40vh;
+	}
+}
+
+.investments-content-row {
+	@extend %investments-row;
+
+	& > .col-12 {
+		min-height: 60vh;
+	}
+}
+
+

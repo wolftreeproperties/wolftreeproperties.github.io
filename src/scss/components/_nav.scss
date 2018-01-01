@@ -2,6 +2,43 @@
 	text-transform: uppercase;
 }
 
+.navbar-brand {
+	transition: opacity $transition-duration $transition-timing-function;
+	opacity: 0;
+	cursor: default;
+
+	&.show-logo {
+		opacity: 1;
+		cursor: pointer;
+	}
+}
+
+.nav-logo {
+	@extend %logo;
+	padding: $logo-padding-top/$logo-scale-factor
+	 $logo-padding-right/$logo-scale-factor
+	 $logo-padding-bottom/$logo-scale-factor
+	 $logo-padding-left/$logo-scale-factor;
+    border-width: $logo-border-width/$logo-scale-factor;
+
+    &:hover {
+        color: $navbar-light-hover-color;
+    }
+}
+
+.nav-logo-1 {
+	font-family: $logo-line-1-font;
+    font-size: $logo-line-1-font-size/$logo-scale-factor;
+    letter-spacing: $logo-line-1-letter-spacing/$logo-scale-factor;
+}
+
+.nav-logo-2 {
+	font-family: $logo-line-2-font;
+    font-size: $logo-line-2-font-size/$logo-scale-factor;
+    letter-spacing: $logo-line-2-letter-spacing/$logo-scale-factor;
+    padding-left: $logo-line-2-padding-left/$logo-scale-factor;
+}
+
 .navbar-toggler {
 	cursor: pointer;
 	border: none;

@@ -51,8 +51,9 @@ gulp.task('sass', function() {
 // uglify javascript
 gulp.task('uglify', function() {
   	return gulp.src(js.in)
-  		.pipe(concat('styles.min.js'))
+  		.pipe(concat('scripts.min.js'))
     	.pipe(uglify())
+        .on('error', gutil.log)
     	.pipe(gulp.dest(js.out));
 });
 

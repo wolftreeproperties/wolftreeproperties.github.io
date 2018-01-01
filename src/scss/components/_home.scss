@@ -6,24 +6,23 @@
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/home.jpg);
     background-size: cover;
-
-    h1 {
-    	text-transform: uppercase;
-    	text-align: center;
-        padding: 32px 45px 40px 45px;
-        border: 8px solid;
-    }
 }
 
-.box-line-1 {
-    font-family: GothamHTF-Black;
-    font-size: 3.1rem;
-    letter-spacing: 4px;
+.main-logo {
+    @extend %logo;
+    padding: $logo-padding-top $logo-padding-right $logo-padding-bottom $logo-padding-left;
+    border-width: $logo-border-width;
 }
 
-.box-line-2 {
-    font-family: GothamHTF-Medium;
-    font-size: 2.5rem;
-    letter-spacing: 5.75px;
-    padding-left: 4px;
+.main-logo-1 {
+    font-family: $logo-line-1-font;
+    font-size: $logo-line-1-font-size;
+    letter-spacing: $logo-line-1-letter-spacing;
+}
+
+.main-logo-2 {
+    font-family: $logo-line-2-font;
+    font-size: $logo-line-2-font-size;
+    letter-spacing: $logo-line-2-letter-spacing;
+    padding-left: $logo-line-2-padding-left;
 }
