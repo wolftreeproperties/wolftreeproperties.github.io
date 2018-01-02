@@ -1,8 +1,8 @@
 $transition-timing-function: ease;
-$transition-duration: 0.25s;
+$transition-duration: 0.45s;
 
 $logo-color: rgba(209, 204, 204, 0.85);
-$logo-hover-color: rgba(209, 204, 204, 0.6);
+$logo-hover-color: rgba(233, 231, 231, 0.85);
 
 $logo-padding-top: 32px;
 $logo-padding-right: 45px;
@@ -21,3 +21,13 @@ $logo-line-2-padding-left: 4px;
 
 $logo-nav-scale-factor: 4.5;
 $logo-xs-scale-factor: 1.75;
+
+$investments-banner-height: 40vh;
+$investments-content-height: 100vh - $investments-banner-height;
+
+$byline-bg-color: #61666a;
+
+$question-margin-left: 2.25rem;
+$question-chevron-width: 25px;
+
+$answer-color: darken(#afafaf, 10%);

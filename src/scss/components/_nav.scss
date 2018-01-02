@@ -1,5 +1,9 @@
 .navbar a {
 	text-transform: uppercase;
+
+	&:focus {
+		color: $navbar-light-color !important;
+	}
 }
 
 .navbar-brand {

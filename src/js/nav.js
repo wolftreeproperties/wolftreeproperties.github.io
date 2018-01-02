@@ -4,7 +4,7 @@ drawer = document.querySelector('.drawer');
 
 for (var i = 0; i < investmentsLinks.length; ++i) {
 	investmentsLinks[i].addEventListener('click', e => {
-		e.preventDefault();
+		e.preventDefault(); 
 		closeDrawer().then(() => 
 			switchPg(document.querySelector('.home-page'), 
 				document.querySelector('.investments-page'), 

@@ -2,16 +2,57 @@
 	@extend %page;
 }
 
-
 .investments-banner-image .col-12 {
-	min-height: 40vh;
+	min-height: $investments-banner-height;
 }
 
-.investments-content-row .col-12 {
-	min-height: 60vh;
+.investments-content-row > .col-12 {
+	min-height: $investments-content-height;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+    flex-direction: column;
+}
+
+.byline-block {
+	background-color: $byline-bg-color;
+
+	.col-10 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		text-align: right;
+	}
+
+	h2 {
+		font-size: 2.75rem;
+		color: $logo-color;
+	}
+}
+
+.q-and-a {
+	margin-bottom: 1rem;
+}
+
+.question {
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	min-height: $question-chevron-width;
+}
+
+.i-chevron-bottom {
+	min-width: $question-chevron-width;
+	min-height: $question-chevron-width;
+}
+
+.question-text {
+	margin-left: $question-margin-left;
+}
+
+.answer {
+	margin-top: 0.25rem;
+	margin-left: calc(#{$question-chevron-width} + #{$question-margin-left});
+	color: $answer-color;
 }
 
 
