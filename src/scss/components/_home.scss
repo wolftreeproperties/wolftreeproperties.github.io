@@ -10,19 +10,43 @@
 
 .main-logo {
     @extend %logo;
-    padding: $logo-padding-top $logo-padding-right $logo-padding-bottom $logo-padding-left;
-    border-width: $logo-border-width;
+    padding: $logo-padding-top/$logo-xs-scale-factor
+        $logo-padding-right/$logo-xs-scale-factor
+        $logo-padding-bottom/$logo-xs-scale-factor
+        $logo-padding-left/$logo-xs-scale-factor;
+    border-width: $logo-border-width/$logo-xs-scale-factor;
 }
 
 .main-logo-1 {
     font-family: $logo-line-1-font;
-    font-size: $logo-line-1-font-size;
-    letter-spacing: $logo-line-1-letter-spacing;
+    font-size: $logo-line-1-font-size/$logo-xs-scale-factor;
+    letter-spacing: $logo-line-1-letter-spacing/$logo-xs-scale-factor;
 }
 
 .main-logo-2 {
     font-family: $logo-line-2-font;
-    font-size: $logo-line-2-font-size;
-    letter-spacing: $logo-line-2-letter-spacing;
-    padding-left: $logo-line-2-padding-left;
+    font-size: $logo-line-2-font-size/$logo-xs-scale-factor;
+    letter-spacing: $logo-line-2-letter-spacing/$logo-xs-scale-factor;
+    padding-left: $logo-line-2-padding-left/$logo-xs-scale-factor;
 }
+
+@include media-breakpoint-up(sm) {
+    .main-logo {
+        padding: $logo-padding-top $logo-padding-right $logo-padding-bottom $logo-padding-left;
+        border-width: $logo-border-width;
+    }
+
+    .main-logo-1 {
+        font-family: $logo-line-1-font;
+        font-size: $logo-line-1-font-size;
+        letter-spacing: $logo-line-1-letter-spacing;
+    }
+
+    .main-logo-2 {
+        font-family: $logo-line-2-font;
+        font-size: $logo-line-2-font-size;
+        letter-spacing: $logo-line-2-letter-spacing;
+        padding-left: $logo-line-2-padding-left;
+    }
+}
+

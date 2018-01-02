@@ -10,16 +10,27 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light">
-		  <a class="navbar-brand" href="#"><div class="nav-logo"><div class="nav-logo-1">Wolftree</div><div class="nav-logo-2">Properties</div></div></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav">
-		      <a class="nav-item nav-link" id="investments-nav-link" href="#">Investments</a>
-		      <a class="nav-item nav-link" id="email-us-nav-link" href="#">Email Us</a>
-		    </div>
-		  </div>
+		 	<a class="navbar-brand" href="#"><div class="nav-logo"><div class="nav-logo-1">Wolftree</div><div class="nav-logo-2">Properties</div></div></a>
+		  	<button class="navbar-toggler" type="button" data-toggle="modal" data-target="#nav-drawer" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    	<div class="navbar-nav">
+		      	<a class="nav-item nav-link investments-nav-link" href="#">Investments</a>
+		      	<a class="nav-item nav-link email-us-nav-link" href="#">Email Us</a>
+		    	</div>
+		  	</div>
+		  	<div class="modal fade drawer" id="nav-drawer" tabindex="-1" role="dialog" aria-labelledby="Toggle Navigation" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      						<span aria-hidden="true">&times;</span>
+    					</button>
+						<a class="nav-item nav-link investments-nav-link" href="#">Investments</a>
+		      			<a class="nav-item nav-link email-us-nav-link" href="#">Email Us</a>
+		    		</div>
+				</div>
+			</div>
 		</nav>
 		<div class="container-fluid">
 			<div class="page-wrapper">
@@ -35,10 +46,21 @@
 						<div class="col-12 col-md-5">
 						</div>
 						<div class="col-12 col-md-7">
+							<div class="row q-and-a">
+								<div class="col">
+									<a class="question" data-toggle="collapse" href="#answer-1" aria-expanded="false" aria-controls="answer-1">
+										test
+									</a>
+									<div class="answer collapse" id="answer-1">
+										test
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.15/bootstrap-native-v4.min.js"></script>
 	</body>
 </html>

@@ -1,6 +1,9 @@
 $transition-timing-function: ease;
 $transition-duration: 0.25s;
 
+$logo-color: rgba(209, 204, 204, 0.85);
+$logo-hover-color: rgba(209, 204, 204, 0.6);
+
 $logo-padding-top: 32px;
 $logo-padding-right: 45px;
 $logo-padding-bottom: 40px;
@@ -16,4 +19,5 @@ $logo-line-2-font-size: 2.5rem;
 $logo-line-2-letter-spacing: 5.75px;
 $logo-line-2-padding-left: 4px;
 
-$logo-scale-factor: 4.5;
+$logo-nav-scale-factor: 4.5;
+$logo-xs-scale-factor: 1.75;

@@ -2,28 +2,16 @@
 	@extend %page;
 }
 
-%investments-row {
-	margin: 0;
 
-	& > .col-12 {
-		padding: 0;
-	}
+.investments-banner-image .col-12 {
+	min-height: 40vh;
 }
 
-.investments-banner-image {
-	@extend %investments-row;
-
-	& > .col-12 {
-		min-height: 40vh;
-	}
-}
-
-.investments-content-row {
-	@extend %investments-row;
-
-	& > .col-12 {
-		min-height: 60vh;
-	}
+.investments-content-row .col-12 {
+	min-height: 60vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
