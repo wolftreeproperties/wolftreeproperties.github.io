@@ -7,7 +7,7 @@
 }
 
 .navbar-brand {
-	transition: opacity $transition-duration $transition-timing-function;
+	transition: opacity $transition-duration - 0.3s ease;
 	opacity: 0;
 	cursor: default;
 
@@ -88,5 +88,5 @@
 }
 
 .modal .investments-nav-link {
-	margin-top: 0.75rem;
+	margin-top: 0.7rem;
 }
