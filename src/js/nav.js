@@ -1,6 +1,8 @@
 const investmentsLinks = 
 	document.querySelectorAll('.investments-nav-link'),
-drawer = document.querySelector('.drawer');
+drawer = document.querySelector('.drawer'),
+nav = document.querySelector('.navbar'),
+pgWrapper = document.querySelector('.page-wrapper');
 
 for (let i = 0; i < investmentsLinks.length; ++i) {
 	investmentsLinks[i].addEventListener('click', e => {
@@ -10,7 +12,7 @@ for (let i = 0; i < investmentsLinks.length; ++i) {
 				document.querySelector('.investments-page'), 
 				() => {
 					document.querySelector('.navbar-brand').classList.add('show-logo');
-					document.querySelector('.page-wrapper').style.overflowY = 'auto';
+					pgWrapper.style.overflowY = 'auto';
 				}
 			)
 		);	
@@ -23,7 +25,6 @@ document.querySelector('.nav-logo').addEventListener('click', e => {
 		document.querySelector('.home-page'),
 		() => {
 			document.querySelector('.navbar-brand').classList.remove('show-logo');
-			const pgWrapper = document.querySelector('.page-wrapper');
 			pgWrapper.scrollTop = 0;
 			pgWrapper.style.overflowY = 'hidden';
 		}
@@ -53,4 +54,12 @@ const switchPg = (from, to, callback) => {
 	to.classList.remove('page-inactive');
 	to.classList.add('page-active');
 	callback();
+}
+
+pgWrapper.onscroll = () => {
+	const scrollPct = pgWrapper.scrollTop/window.innerHeight;
+	if (scrollPct > 0.25)
+		nav.classList.add('nav-colored-bg');
+	else
+		nav.classList.remove('nav-colored-bg');
 }
