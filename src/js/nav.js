@@ -2,7 +2,7 @@ const investmentsLinks =
 	document.querySelectorAll('.investments-nav-link'),
 drawer = document.querySelector('.drawer');
 
-for (var i = 0; i < investmentsLinks.length; ++i) {
+for (let i = 0; i < investmentsLinks.length; ++i) {
 	investmentsLinks[i].addEventListener('click', e => {
 		e.preventDefault(); 
 		closeDrawer().then(() => 
@@ -22,8 +22,10 @@ document.querySelector('.nav-logo').addEventListener('click', e => {
 	switchPg(document.querySelector('.investments-page'), 
 		document.querySelector('.home-page'),
 		() => {
-			document.querySelector('.navbar-brand').classList.remove('show-logo')
-			document.querySelector('.page-wrapper').style.overflowY = 'hidden';
+			document.querySelector('.navbar-brand').classList.remove('show-logo');
+			const pgWrapper = document.querySelector('.page-wrapper');
+			pgWrapper.scrollTop = 0;
+			pgWrapper.style.overflowY = 'hidden';
 		}
 	);
 });
