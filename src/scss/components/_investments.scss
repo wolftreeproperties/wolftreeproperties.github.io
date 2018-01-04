@@ -7,14 +7,22 @@
 }
 
 .investments-content-row > .col-12 {
-	min-height: $investments-content-height;
 	display: flex;
 	justify-content: center;
     flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+    	min-height: $investments-content-height;
+    }
 }
 
 .byline-block {
 	background-color: $byline-bg-color;
+	padding: $byline-block-sm-padding;
+
+	@include media-breakpoint-up(md) {
+		padding: 0;
+	}
 
 	.col-10 {
 		display: flex;
@@ -29,8 +37,12 @@
 	}
 }
 
-.q-and-a {
-	margin-bottom: 1rem;
+.questions-block {
+	padding: $questions-block-padding;
+}
+
+.q-and-a:not(:last-of-type) {
+	margin-bottom: $q-and-a-margin-bottom;
 }
 
 .question {

@@ -1,5 +1,7 @@
-.nav-colored-bg {
-	background-color: #413f49;
+@include media-breakpoint-down(sm) {
+	.nav-colored-bg {
+		background-color: #413f49;
+	}
 }
 
 .navbar a {
