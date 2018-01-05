@@ -51,14 +51,14 @@
 
 	@include media-breakpoint-up(sm) {
 		padding: $byline-block-sm-padding;
-
-		h2 {
-			font-size: $byline-block-sm-font-size;
-		}
 	}
 
 	@include media-breakpoint-up(md) {
 		padding: $byline-block-md-padding;
+
+		h2 {
+			font-size: $byline-block-md-font-size;
+		}
 	}
 }
 
