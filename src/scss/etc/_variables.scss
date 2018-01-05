@@ -22,8 +22,11 @@ $logo-line-2-padding-left: 4px;
 $logo-nav-scale-factor: 4.5;
 $logo-xs-scale-factor: 1.75;
 
-$investments-banner-height: 40vh;
-$investments-content-height: 100vh - $investments-banner-height;
+$investments-banner-xs-height: 60vh;
+$investments-banner-md-height: 40vh;
+$investments-content-md-height: 100vh - $investments-banner-md-height;
+$investments-banner-xl-height: 50vh;
+$investments-content-xl-height: 100vh - $investments-banner-xl-height;
 
 $byline-block-sm-padding: 8rem 0rem;
 $questions-block-padding: 4rem 0rem;

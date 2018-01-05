@@ -3,7 +3,17 @@
 }
 
 .investments-banner-image .col-12 {
-	min-height: $investments-banner-height;
+	min-height: $investments-banner-xs-height;
+	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/investments.jpg);
+	background-size: cover;
+
+	@include media-breakpoint-up(md) {
+		min-height: $investments-banner-md-height;
+	}
+
+	@include media-breakpoint-up(xl) {
+		min-height: $investments-banner-xl-height;
+	}
 }
 
 .investments-content-row > .col-12 {
@@ -12,7 +22,11 @@
     flex-direction: column;
 
     @include media-breakpoint-up(md) {
-    	min-height: $investments-content-height;
+    	min-height: $investments-content-md-height;
+    }
+
+    @include media-breakpoint-up(xl) {
+    	min-height: $investments-content-xl-height;
     }
 }
 

@@ -1,7 +1,5 @@
-@include media-breakpoint-down(sm) {
-	.nav-colored-bg {
-		background-color: #413f49;
-	}
+.nav-colored-bg {
+	background-color: #413f49;
 }
 
 .navbar a {
@@ -13,7 +11,7 @@
 }
 
 .navbar-brand {
-	transition: opacity $transition-duration - 0.3s ease;
+	transition: opacity $transition-duration $transition-timing-function;
 	opacity: 0;
 	cursor: default;
 
@@ -60,6 +58,7 @@
 
 .navbar-collapse {
 	justify-content: flex-end;
+	padding-right: 0.75rem;
 }
 
 .close {
