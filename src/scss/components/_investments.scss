@@ -47,6 +47,7 @@
 	h2 {
 		font-size: $byline-block-font-size;
 		color: $logo-color;
+		margin-bottom: 0;
 	}
 
 	@include media-breakpoint-up(sm) {
